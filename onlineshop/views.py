@@ -23,11 +23,11 @@ def categories(request):
 
 
 def products(request):
-    
-  Products = Products.objects.all()
+
+  products = Products.objects.all()
   
   context = {
-      'products' : Products
+      'products' : products
   }  
 
   return render(request, 'onlineshop/products.html', context)  
