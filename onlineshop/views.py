@@ -6,7 +6,7 @@ from .models import Categories, Products
 
 def index(request):
     context = {}
-    return render(request, 'index.html', context)
+    return render(request, 'onlineshop/index.html', context)
 
 
 
@@ -18,7 +18,7 @@ def categories(request):
       'categories' : categories
   }  
 
-  return render(request, 'categories.html', context)  
+  return render(request, 'onlineshop/categories.html', context)  
 
 
 
@@ -30,7 +30,7 @@ def products(request):
       'products' : Products
   }  
 
-  return render(request, 'products.html', context)  
+  return render(request, 'onlineshop/products.html', context)  
 
 
 
